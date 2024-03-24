@@ -1,0 +1,234 @@
+:root{
+    --achievements: #002585;
+    --bk: #FFFFFF;
+    --sign-in: #001F7D;
+    --shadow: #0000002a;
+    --underLine: #01119E;
+}
+  /*هذي الخصائص تنطبق على كل شيء بالصفحه الا الي اغيره انا بعدين*/
+  * {
+    font-family: "Cairo", sans-serif;
+    background-color: var(--bk);
+    margin: 0;
+    padding: 0;
+    color: var(--textANDIcons);
+  }
+  /*الي هو الناف بار خليته ثابت وخليت فيه مسافه بين العناصر
+  2 على الاطراف وشيء بالنص*/
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bk);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 13vh;  
+    box-shadow: 0 5px 10px var(--shadow); /* حددت الظل */
+    z-index: 3;
+  }
+
+  .nav-links-container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto; 
+  }
+  .nav-links {
+    list-style: none;/*عشان يشيال نقاط*/
+    font-weight: normal; 
+    font-size: 1.2rem; /*عشان حتى لو تغير حجم الشاشه تبقى */
+    display: flex;/*يساعني بترتيب العناصر اسهلل*/
+    justify-content: space-between;
+  }
+  .nav-links li {
+    display: inline-block;/*جنب بعض الروابط*/
+    margin: 1.1rem ; 
+  }
+  a {
+    text-decoration: none;/*الخط الازرق*/
+  }
+  .logo {
+    width: 170px; 
+  }
+  .sign-in button {
+    background-color: var(--sign-in);
+    color: var(--bk);
+    border-radius: 2.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    white-space: pre;/*عشان يكون النص مثل ما هو مكتوب بالظبط*/
+    margin-right: 10vw;
+    padding: 0.8rem 1.8rem;
+}
+  .nav-item {
+    position: relative; 
+  }
+
+  .nav-link::after {
+    position: absolute;
+    transition: all 0.2s;
+    content: "";
+    height: 0.5vh;
+    width: 100%;
+    background-color: var(--underLine);
+    border-radius: 15px;
+    bottom: -5px; /* يكون تحت النص */
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+  }
+.nav-link:hover::after,
+.nav-links:focus::after {
+    opacity: 1;/*اذا حطيت المؤشر عليه*/
+} 
+
+.nav-links .nav-link.current::after { 
+    opacity: 1; /*الي الحين*/
+}
+
+
+
+.s1{
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+.the-achievements{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.names{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+.volunteer-hours{
+  color: var(--achievements);
+}
+.beneficiary-charities{
+  margin-right: 240px;
+  color: var(--achievements);
+  white-space: pre;
+}
+.volunteers{
+  color: var(--achievements);
+  margin-right: 220px;
+}
+
+.hours-contenr{
+  height: 220px;
+  width: 180px;
+  box-shadow: 
+   0 4px 4px 0 var(--shadow),
+  -4px 0 4px 0 var(--shadow),
+   4px 0 4px 0 var(--shadow);
+  border-radius: 15px; 
+  background-color: var(--bk); 
+  padding-right: 1vw;
+  margin: 0 4vw;
+  position: relative;
+  margin-right: 50px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.how-many-hours{
+  font-size: 1.2rem;
+  color: var(--achievements);
+  position: absolute;
+  top: 130px;
+  right: 50px;
+  text-align: center;
+}
+
+
+.charity-num-contenr{
+  height: 220px;
+  width: 180px;
+  box-shadow: 
+   0 4px 4px 0 var(--shadow),
+  -4px 0 4px 0 var(--shadow),
+   4px 0 4px 0 var(--shadow);
+  border-radius: 15px; 
+  background-color: var(--bk); 
+  padding-right: 1vw;
+  margin: 0 4vw;
+  position: relative;
+  margin-top: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.hours,.num{
+  height: 65px;
+  position: absolute;
+  top: 30px;
+  right: 60px;
+}
+.how-many-charities{
+  font-size: 1.2rem;
+  color: var(--achievements);
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  text-align: center;
+}
+
+.volunteers-num{
+  height: 220px;
+  width: 180px;
+  box-shadow: 
+   0 4px 4px 0 var(--shadow),
+  -4px 0 4px 0 var(--shadow),
+   4px 0 4px 0 var(--shadow);
+  border-radius: 15px; 
+  background-color: var(--bk); 
+  padding-right: 1vw;
+  margin: 0 4vw;
+  position: relative;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.how-many-volunteers{
+  font-size: 1.2rem;
+  color: var(--achievements);
+  position: absolute;
+  top: 130px;
+  right: 20px;
+  text-align: center;
+}
+
+
+.s2{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.most{
+  font-size: 2rem;
+  color: var(--achievements);
+  position: absolute;
+  right: 200px;
+  z-index: 1;
+}
+.main-img{
+  height: 90vh;
+  position: absolute;
+  top: 20px;  
+}
+
+
+
+
+.line{
+    background-color: var(--contenerANDregister-line);
+    width: 100%;
+    height: 130px;
+    margin-top: 30vh;
+}
