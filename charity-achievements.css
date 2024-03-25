@@ -6,6 +6,7 @@
     --sign-in: #001F7D;
     --shadow: #0000002a;
     --underLine: #01119E;
+    --line: #264A99;
 }
 
   /*هذي الخصائص تنطبق على كل شيء بالصفحه الا الي اغيره انا بعدين*/
@@ -97,8 +98,9 @@
 
 
 .s1{  /*شرحت الفايربورت هاي والي هي تاخذ من طول الشاشه*/
-  margin-top: 20vh;
+  margin-top: 25vh;
   margin-bottom: 20vh;
+  position: relative;;
 }
 .the-achievements{
   display: flex;  /*شرحته فوق*/
@@ -114,15 +116,20 @@
 }
 .volunteer-hours{
   color: var(--achievements);
+  position: absolute;
+  right: 27.5vw;
 }
 .beneficiary-charities{
-  margin-right: 240px;
   color: var(--achievements);
-  white-space: pre;  /*ابيك تحط النص مثل ما هو بنفس مسافته */
+  width: 110px; 
+  text-align: center;
+  position: absolute;
+  right: 46.5vw;
 }
 .volunteers{
   color: var(--achievements);
-  margin-right: 220px;
+  position: absolute;
+  right: 66vw;
 }
 
 .hours-contenr{
@@ -137,8 +144,9 @@
   padding-right: 1vw;
   margin: 0 4vw;
   position: relative;  /*عشان نخليه هو المرجع لمقاسات كم شغله بعدين*/
-  margin-right: 50px;
-  margin-top: 15px;
+  position: absolute;
+  top: 45px;
+  right: 41vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -166,9 +174,10 @@
   border-radius: 15px; 
   background-color: var(--bk); 
   padding-right: 1vw;
-  margin: 0 4vw;
   position: relative;
-  margin-top: 15px;
+  position: absolute;
+  top: 45px;
+  right: 44vw;
   justify-content: center;
   align-items: center;
 }
@@ -202,7 +211,9 @@
   padding-right: 1vw;
   margin: 0 4vw;
   position: relative;
-  margin-top: 15px;
+  position: absolute;
+  top: 45px;
+  right: 59.5vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -222,12 +233,13 @@
   display: flex;
   justify-content: center;
   position: relative;
+  margin-top: 55vh;
 }
 .most{
   font-size: 2rem;
   color: var(--achievements);
   position: absolute;
-  right: 200px;
+  right: 17vw;
   z-index: 1;
 }
 .main-img{
@@ -241,9 +253,10 @@
 /*الباقي مشروح  فوق*/
 
 .line{
-  background-color: var(--contenerANDregister-line);
+  background-color: var(--line);
   width: 100%;  /*عشان ياخذ عرض الشاشه كلها*/
   height: 130px;
-  margin-top: 500px;
+  margin-top: 105vh;
+  z-index: 1;
 }
 /*𝚍𝚘𝚗𝚎 𝚋𝚢 𝙳𝚊𝚗𝚊| (• ◡•)|*/
