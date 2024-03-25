@@ -215,12 +215,15 @@ and (max-width:15vw){
     position: relative;
     
 }
+.course-1{
+    margin-right: 70px;
+}
                 /*الباقي مشروح فوق*/
         /*الباقي مشروح فوق*/
 /*الباقي مشروح فوق*/
 
-.course-title h5{
-    font-size: 1.8rem;  
+.course-title{
+    font-size: 1rem;  
     font-weight: bold;
     position: absolute;
     right: 1vw;
@@ -290,27 +293,32 @@ and (max-width:15vw){
     border-radius: 20px; 
     font-size: 1rem; 
     position: absolute;
-    top: 110px;
+    top: 160px;
     right: 10px;
 }
 .the-courses {
     position: relative;
   }
+
 .more-courses{
     height: 55px;
     width: 55px;
     position: absolute;
-    top: 50px;
-    right: 1000px;
+    top: 70px;
+    right: 900px;
     border-radius: 100%;
     background-color: var(--bk);
     box-shadow: 
     0 4px 4px 0 var(--shadow),
    -4px 0 4px 0 var(--shadow);
 }
-.more-courses h3{
+.more{
     text-align: center;
+    background-color: transparent ;
+    border: none;
+    border-radius: 100%;
     margin: 7px;
+    color: var(--sign-in);
 }
 
 
@@ -346,13 +354,13 @@ and (max-width:15vw){
             /*الباقي مشروح فوق*/
 /*الباقي مشروح فوق*/
   .beneficiary-charities{
-    margin-right: 240px;
+    margin-right: 170px;
     color: var(--achievements);
     white-space: pre;
   }
 .volunteers{
     color: var(--achievements);
-    margin-right: 220px;
+    margin-right: 170px;
 }
 
   .hours-contenr{
