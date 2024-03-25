@@ -93,7 +93,7 @@
     opacity: 1; /*الي الحين*/
 }
 
-
+ 
 
 
 
@@ -143,10 +143,8 @@
     margin-top: 10vh;
     z-index: 2;
 }
-
-                        /*الباقي مشروح فوق*/
-                /*الباقي مشروح فوق*/
         /*الباقي مشروح فوق*/
+    /*الباقي مشروح فوق*/
 /*الباقي مشروح فوق*/
 
 
@@ -172,10 +170,12 @@
 
 
 
-.s3{
-    margin-right: 1vw;
-    margin-top: 100px; 
 
+
+
+.s3{
+    margin-right: 2vw;
+    margin-top: 100px;
 }
 
 .courses{
@@ -189,13 +189,13 @@
     justify-content: first baseline; 
   }
   
-@media screen and (max-height: 30vh) 
-and (max-width:15vw){
+@media screen and (max-height: 40vh) 
+and (max-width:35vw){
     .course-1
     ,.course-2
     ,.course-3 {
-        height: 25vh;
-        width: 12.5vw;
+        height: 30vh;
+        width: 25vw;
     }
 }/* عشان لا تتغير الشاشه الحجم ما يصير ثابت نفس ما هو وهنا حطيت حد أقصى للطول والعرض بحيث ما يتعداهم حتى لوشروح*/
 
@@ -301,11 +301,11 @@ and (max-width:15vw){
   }
 
 .more-courses{
-    height: 55px;
-    width: 55px;
+    height: 60px;
+    width: 60px;
     position: absolute;
     top: 70px;
-    right: 900px;
+    right: 60rem;
     border-radius: 100%;
     background-color: var(--bk);
     box-shadow: 
@@ -317,7 +317,7 @@ and (max-width:15vw){
     background-color: transparent ;
     border: none;
     border-radius: 100%;
-    margin: 7px;
+    margin: 10px;
     color: var(--sign-in);
 }
 
@@ -325,65 +325,85 @@ and (max-width:15vw){
 
 
 
-
+.s4{
+    margin-right: 2vw;
+}
 .the-achievements{
     display: flex;      /*الباقي مشروح فوق*/
             /*الباقي مشروح فوق*/
     /*الباقي مشروح فوق*/
     justify-content: first baseline;
     align-items: center;
+    position: relative;
   }
-  .charity-achievements{
-    font-size: 1.5rem ;
-    font-weight: bold;
-    margin: 200px 1vw 50px;
-  }
-  .names{
-    display: flex;      /*الباقي مشروح فوق*/
-            /*الباقي مشروح فوق*/
-    /*الباقي مشروح فوق*/
-    justify-content: first baseline;
-    align-items: center;
-    font-size: 1.2rem;
-    font-weight: bolder;
-  }
-  .volunteer-hours{
-    margin-right: 100px;
-    color: var(--achievements);
-  }                         /*الباقي مشروح فوق*/
-            /*الباقي مشروح فوق*/
-/*الباقي مشروح فوق*/
-  .beneficiary-charities{
-    margin-right: 170px;
-    color: var(--achievements);
-    white-space: pre;
-  }
-.volunteers{
-    color: var(--achievements);
-    margin-right: 170px;
-}
+  @media screen and (max-height: 30vh) 
+and (max-width:25vw){
+    #hours-contenr
+    ,#charity-num-contenr
+    , #volunteers-num{
+        height: 30vh;
+        width: 20vw;
+    }
+}/* عشان لا تتغير الشاشه الحجم ما يصير ثابت نفس ما هو وهنا حطيت حد أقصى للطول والعرض بحيث ما يتعداهم حتى لوشروح*/
 
-  .hours-contenr{
+#hours-contenr
+,#charity-num-contenr
+,#volunteers-num {
     height: 220px;
     width: 180px;
     box-shadow: 
      0 4px 4px 0 var(--shadow),
     -4px 0 4px 0 var(--shadow),
-     4px 0 4px 0 var(--shadow);
+     4px 0 8px 0 var(--shadow);
     border-radius: 15px; 
     background-color: var(--bk); 
-    padding-right: 1vw;
-    margin: 0 4vw;
+    margin: 0 3.5vw;
     position: relative;
-    margin-right: 50px;
-    margin-top: 15px;
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+  .charity-achievements{
+    font-size: 1.5rem ;
+    font-weight: bold;
+    margin: 200px 1.5vw 20px;
   }
-                 /*الباقي مشروح فوق*/
-        /*الباقي مشروح فوق*/
-/*الباقي مشروح فوق*/
+
+
+.conteners{
+    position: absolute;
+    top: 80px;
+}
+  .achievement-text{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: first baseline;
+    align-items: center;
+    font-weight: bolder;
+    color: var(--achievements);
+    position: absolute;
+    top: 0px;
+  }
+
+#volunteer-hours{
+    position: absolute;
+    top: 1.5vh;
+}
+#beneficiary-charities{
+    text-align: center;
+    width: 110px;
+    position: absolute;
+}
+#volunteers{
+    position: absolute;
+    top: 1.5vh;
+}
+.achievement-1,
+.achievement-2,
+.achievement-3{
+    display: flex;
+    justify-content: center;
+}
+  
   .how-many-hours{
     font-size: 1.2rem;
     color: var(--achievements);
@@ -393,23 +413,10 @@ and (max-width:15vw){
     text-align: center;
   }
   
-  
-  .charity-num-contenr{
-    height: 220px;
-    width: 180px;
-    box-shadow: 
-     0 4px 4px 0 var(--shadow),
-    -4px 0 4px 0 var(--shadow),
-     4px 0 4px 0 var(--shadow);
-    border-radius: 15px; 
-    background-color: var(--bk); 
-    padding-right: 1vw;
-    margin: 0 4vw;
-    position: relative;
-    margin-top: 15px;
-    justify-content: center;
-    align-items: center;
-  }
+            /*هنا الكونتينرات مشابهه للي فوق بس اللهم غيرت المحتوى وكم شغله*/
+        /*الباقي مشروح  فوق*/
+  /*الباقي مشروح  فوق*/
+
   .hours,.num{
     height: 65px;
     position: absolute;
@@ -424,39 +431,27 @@ and (max-width:15vw){
     right: 20px;
     text-align: center;
   }
-                /*الباقي مشروح فوق*/
+                 /*الباقي مشروح  فوق*/
+          /*الباقي مشروح  فوق*//*الباقي مشروح فوق*/
         /*الباقي مشروح فوق*/
-/*الباقي مشروح فوق*/
-  .volunteers-num{
-    height: 220px;
-    width: 180px;
-    box-shadow: 
-     0 4px 4px 0 var(--shadow),
-    -4px 0 4px 0 var(--shadow),
-     4px 0 4px 0 var(--shadow);
-    border-radius: 15px; 
-    background-color: var(--bk); 
-    padding-right: 1vw;
-    margin: 0 4vw;
-    position: relative;
-    margin-top: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+  /*الباقي مشروح فوق*/
+
   .how-many-volunteers{
     font-size: 1.2rem;
     color: var(--achievements);
     position: absolute;
     top: 130px;
     right: 20px;
+    width: 120px;
     text-align: center;
   }
 
+
+  
 .line{
     background-color: var(--contenerANDregister-line);
     width: 100%;/* عشان يصير بنفس عرض الفحه دايم*/
     height: 130px;
-    margin-top: 30vh;
+    margin-top: 400px;
 }
 /*𝔻𝕠𝕟𝕖 𝕓𝕪 𝔻𝕒𝕟𝕒 ʕ •́؈•̀ ₎*/
