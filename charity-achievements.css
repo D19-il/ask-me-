@@ -97,6 +97,8 @@
 
 
 
+
+
 .s1{  /*شرحت الفايربورت هاي والي هي تاخذ من طول الشاشه*/
   margin-top: 25vh;
   margin-bottom: 20vh;
@@ -107,125 +109,118 @@
   justify-content: center;  /*هنا بدال ما اقول له خل شيئين عللى الطرف ووحاد بالنص او اقول حوطه بمساف هنا بقول له يحطها بالوسط*/
   align-items: center;
 }
-.names{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: bolder;
-}
-.volunteer-hours{
-  color: var(--achievements);
-  position: absolute;
-  right: 27.5vw;
-}
-.beneficiary-charities{
-  color: var(--achievements);
-  width: 110px; 
-  text-align: center;
-  position: absolute;
-  right: 46.5vw;
-}
-.volunteers{
-  color: var(--achievements);
-  position: absolute;
-  right: 66vw;
-}
+@media screen and (max-height: 30vh) 
+and (max-width:25vw){
+    #hours-contenr
+    ,#charity-num-contenr
+    , #volunteers-num{
+        height: 30vh;
+        width: 20vw;
+    }
+}/* عشان لا تتغير الشاشه الحجم ما يصير ثابت نفس ما هو وهنا حطيت حد أقصى للطول والعرض بحيث ما يتعداهم حتى لوشروح*/
 
-.hours-contenr{
-  height: 220px;
-  width: 180px;
-  box-shadow:   /*حطيت له ظل وعينت قيمه لكذا جهه*/
-   0 4px 4px 0 var(--shadow),
-  -4px 0 4px 0 var(--shadow),
-   4px 0 4px 0 var(--shadow);
-  border-radius: 15px; 
-  background-color: var(--bk); 
-  padding-right: 1vw;
-  margin: 0 4vw;
-  position: relative;  /*عشان نخليه هو المرجع لمقاسات كم شغله بعدين*/
-  position: absolute;
-  top: 45px;
-  right: 41vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#hours-contenr
+,#charity-num-contenr
+,#volunteers-num {
+    height: 220px;
+    width: 180px;
+    box-shadow: 
+     0 4px 4px 0 var(--shadow),
+    -4px 0 4px 0 var(--shadow),
+     4px 0 8px 0 var(--shadow);
+    border-radius: 15px; 
+    background-color: var(--bk); 
+    margin: 0 3.5vw;
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
+  .charity-achievements{
+    font-size: 1.5rem ;
+    font-weight: bold;
+    margin: 200px 1.5vw 20px;
+  }
 
-.how-many-hours{
-  font-size: 1.2rem;
-  color: var(--achievements);
-  position: absolute;
-  top: 130px;
-  right: 50px;
-  text-align: center;
-}
 
-          /*هنا الكونتينرات مشابهه للي فوق بس اللهم غيرت المحتوى وكم شغله*/
-      /*الباقي مشروح  فوق*/
-/*الباقي مشروح  فوق*/
-.charity-num-contenr{
-  height: 220px;
-  width: 180px;
-  box-shadow: 
-   0 4px 4px 0 var(--shadow),
-  -4px 0 4px 0 var(--shadow),
-   4px 0 4px 0 var(--shadow);
-  border-radius: 15px; 
-  background-color: var(--bk); 
-  padding-right: 1vw;
-  position: relative;
-  position: absolute;
-  top: 45px;
-  right: 44vw;
-  justify-content: center;
-  align-items: center;
+.conteners{
+    position: absolute;
+    top: 80px;
 }
-.hours,.num{
-  height: 65px;
-  position: absolute;
-  top: 30px;
-  right: 60px;
+  .achievement-text{
+    display: flex;
+    font-size: 1.2rem;
+    justify-content: first baseline;
+    align-items: center;
+    font-weight: bolder;
+    color: var(--achievements);
+    position: absolute;
+    top: 0px;
+  }
+
+#volunteer-hours{
+    position: absolute;
+    top: 1.5vh;
 }
-.how-many-charities{
-  font-size: 1.2rem;
-  color: var(--achievements);
-  position: absolute;
-  top: 130px;
-  right: 20px;
-  text-align: center;
+#beneficiary-charities{
+    text-align: center;
+    width: 110px;
+    position: absolute;
 }
-               /*الباقي مشروح  فوق*/
-        /*الباقي مشروح  فوق*//*الباقي مشروح فوق*/
-      /*الباقي مشروح فوق*/
-/*الباقي مشروح فوق*/
-.volunteers-num{
-  height: 220px;
-  width: 180px;
-  box-shadow: 
-   0 4px 4px 0 var(--shadow),
-  -4px 0 4px 0 var(--shadow),
-   4px 0 4px 0 var(--shadow);
-  border-radius: 15px; 
-  background-color: var(--bk); 
-  padding-right: 1vw;
-  margin: 0 4vw;
-  position: relative;
-  position: absolute;
-  top: 45px;
-  right: 59.5vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#volunteers{
+    position: absolute;
+    top: 1.5vh;
 }
-.how-many-volunteers{
-  font-size: 1.2rem;
-  color: var(--achievements);
-  position: absolute;
-  top: 130px;
-  right: 20px;
-  text-align: center;
+.achievement-1,
+.achievement-2,
+.achievement-3{
+    display: flex;
+    justify-content: center;
 }
+  
+  .how-many-hours{
+    font-size: 1.2rem;
+    color: var(--achievements);
+    position: absolute;
+    top: 130px;
+    right: 50px;
+    text-align: center;
+  }
+  
+            /*هنا الكونتينرات مشابهه للي فوق بس اللهم غيرت المحتوى وكم شغله*/
+        /*الباقي مشروح  فوق*/
+  /*الباقي مشروح  فوق*/
+
+  .hours,.num{
+    height: 65px;
+    position: absolute;
+    top: 30px;
+    right: 60px;
+  }
+  .how-many-charities{
+    font-size: 1.2rem;
+    color: var(--achievements);
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    text-align: center;
+  }
+                 /*الباقي مشروح  فوق*/
+          /*الباقي مشروح  فوق*//*الباقي مشروح فوق*/
+        /*الباقي مشروح فوق*/
+  /*الباقي مشروح فوق*/
+
+  .how-many-volunteers{
+    font-size: 1.2rem;
+    color: var(--achievements);
+    position: absolute;
+    top: 130px;
+    right: 20px;
+    width: 120px;
+    text-align: center;
+  }
+
+
+
 
       /*الباقي مشروح  فوق*/
 /*الباقي مشروح  فوق*/
@@ -233,17 +228,17 @@
   display: flex;
   justify-content: center;
   position: relative;
-  margin-top: 55vh;
+  margin-top: 30vh;
 }
 .most{
   font-size: 2rem;
   color: var(--achievements);
   position: absolute;
-  right: 17vw;
+  right: 10vw;
   z-index: 1;
 }
 .main-img{
-  height: 90vh;
+  height: 85vh;
   position: absolute;
   top: 20px;  
 }
